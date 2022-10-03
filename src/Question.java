@@ -1,4 +1,4 @@
-public class Question {
+public abstract class Question {
     String ask;
 
 
@@ -6,6 +6,7 @@ public class Question {
         this.ask = ask;
 
     }
-    public void buildAns() {}
 
+
+    public abstract int buildAns(String correctChoice);
 }

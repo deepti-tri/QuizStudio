@@ -1,16 +1,17 @@
-import java.lang.reflect.Array;
-
 public class MultiChoice extends Question {
-    String[] multiAns;
-
-    public MultiChoice(String ask) {
+    String correctChoice;
+    int score;
+    public MultiChoice(String ask, String correctChoice) {
         super(ask);
-
+        this.correctChoice = correctChoice;
 
     }
 
     @Override
-    public void buildAns() {
-
+    public int buildAns(String correctChoice) {
+        if (correctChoice.equals(correctChoice)) {
+            score = 1;
+        }
+        return score;
     }
 }
